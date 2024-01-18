@@ -1,20 +1,20 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Box } from '@mui/icons-material';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Box } from '@mui/material';
 
-import { Navbar, Feed, VedioDetail, ChannelDetail, SearchFeed } from './components';
+import { ChannelDetail, VideoDetail, SearchFeed, Navbar, Feed } from './components';
 
-const App = () => {
+const App = () => (
     <BrowserRouter>
-    <Box sx={{ backgroundcolor: '#000' }}>
+    <Box sx={{ backgroundColor: '#000' }}>
         <Navbar />
-        <Routes>
-            <Route path="/" exact element={<Feed />} />
-            <Route path="/vedio/:id" element={<VedioDetail />} />
-            <Route path="/channel/:id" element={<ChannelDetail />} />
-            <Route path="/search/:id" element={<SearchFeed />} />
-        </Routes>
+                <Routes>
+                <Route exact path='/' element={<Feed />} />
+                <Route path='/video/:id' element={<VideoDetail />} />
+                <Route path='/channel/:id' element={<ChannelDetail />} />
+                <Route path='/search/:searchTerm' element={<SearchFeed />} />
+            </Routes>
         </Box>
     </BrowserRouter>
-};
+);
 
 export default App;
