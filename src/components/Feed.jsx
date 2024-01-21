@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 
-import { Sidebar } from "./";
+import { Vedios, Sidebar } from "./";
 
 const Feed = () => {
   return (
@@ -18,9 +18,19 @@ const Feed = () => {
         </Typography>
       </Box>
 
-      
+      <Box p={2} sx={{ overflowY: 'auto',
+      height: '90vh', flex: 2}}>
+          <Typography varient="h4"
+          fontWeight="bold" mb={2} sx={{
+          color: 'white' }}>
+            New <span style={{ color: 
+            '#F31503'}}>videos</span>
+        </Typography>
+        
+        <Vedios videos={[]} />
+      </Box>
     </Stack>
   );
 };
 
-export default Feed;
+export default Feed
