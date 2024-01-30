@@ -5,6 +5,19 @@ import { Search } from '@mui/icons-material';
 import MicIcon from '@mui/icons-material/Mic';
 
 const SearchBar = () => {
+    const [searchTerm, setSearchTerm] = useState('');
+    const navigate = useNavigate();
+
+    const onhandleSubmit = (e) => {
+        e.preventDefault();
+
+        if (searchTerm) {
+        navigate(`/search/${searchTerm}`);
+
+        setSearchTerm('');
+        }
+    };
+
     return (
         <Paper
             component='form'
@@ -31,7 +44,7 @@ const SearchBar = () => {
                     <MicIcon />
                 </IconButton>
             </Paper>
-    )
-}
+    );
+};
 
-export default SearchBar
+export default SearchBar;

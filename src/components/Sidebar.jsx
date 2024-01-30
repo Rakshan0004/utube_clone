@@ -36,4 +36,4 @@ const Sidebar = ({ selectcategory, setSelectedCategory }) => {
 )
 }
 
-export default Sidebar
+export default categories;
