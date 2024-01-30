@@ -1,5 +1,5 @@
 import { Stack, Box } from '@mui/material';
-import { VideoCard, ChannelCard } from './';
+import { VideoCard } from './';
 
 const Videos = ({ videos }) => {
   
