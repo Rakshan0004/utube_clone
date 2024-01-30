@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 
 import { fetchFromAPI } from "../utils/fetchFromAPI";
-import { Vedios, Sidebar } from "./";
+import { Videos, Sidebar } from "./";
 
 const Feed = () => {
   const [selectedCategory,
