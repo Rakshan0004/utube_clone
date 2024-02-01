@@ -4,6 +4,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 import { Videos, Sidebar } from "./";
 
+
 const Feed = () => {
   const [selectedCategory,
   setSelectedCategory] = useState('New');
@@ -44,4 +45,4 @@ const Feed = () => {
   );
 };
 
-export default Feed
+export default Feed;
