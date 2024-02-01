@@ -31,5 +31,9 @@ export const categories = [
     { name: 'Crypto', icon: <DeveloperModeIcon />, },
 ];
 
+export const demoThumbnailUrl = 'https://i.ibb.co/G2L2Gwp/API-Course.png';
+export const demoChannelUrl = 'https://www.youtube.com/';
+export const demoVideoUrl = 'https://www.youtube.com/';
+export const demoChannelTitle = 'youtube';
 export const demoVideoTitle = 'Build and Deploy 5 JavaScript & React API Projects in 10 Hours - Full Course | RapidAPI';
 export const demoProfilePicture = 'http://dergipark.org.tr/assets/app/images/buddy_sample.png'
