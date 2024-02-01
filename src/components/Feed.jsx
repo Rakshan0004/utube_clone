@@ -38,7 +38,7 @@ const Feed = () => {
             '#F31503'}}>videos</span>
         </Typography>
         
-        <Vedios videos={[]} />
+        <Videos videos={[]} />
       </Box>
     </Stack>
   );
