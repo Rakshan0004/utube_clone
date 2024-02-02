@@ -1,6 +1,8 @@
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import HomeIcon from '@mui/icons-material/Home';
 import CodeIcon from '@mui/icons-material/Code';
+import KeyboardAltIcon from '@mui/icons-material/KeyboardAlt';
+import CardTravelIcon from '@mui/icons-material/CardTravel';
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
@@ -16,8 +18,8 @@ export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
 
 export const categories = [
   { name: 'New', icon: <HomeIcon />, },
-  { name: 'Travelling', icon: <CodeIcon />, },
-  { name: 'Coding', icon: <CodeIcon />, },
+  { name: 'Travelling', icon: <CardTravelIcon />, },
+  { name: 'Coding', icon: <KeyboardAltIcon />, },
   { name: 'ReactJS', icon: <CodeIcon />, },
   { name: 'NextJS', icon: <CodeIcon />, },
   { name: 'Music', icon: <MusicNoteIcon /> },

@@ -29,6 +29,7 @@ const SearchBar = () => {
         mr: { sm: 5 },
         }}
     >
+        Rakshan - 
         <input
         className='search-bar'
         placeholder='Search...'
